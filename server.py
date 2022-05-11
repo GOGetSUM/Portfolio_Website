@@ -21,6 +21,22 @@ def text2mrse():
 def tictactoe():
     return render_template('tictactoe.html')
 
+# watermark _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@app.route('/watermark',methods=["GET", "POST"])
+def watermark():
+    return render_template('watermark.html')
+
+# typing speed _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@app.route('/typingspeed',methods=["GET", "POST"])
+def typingspeed():
+    return render_template('typingspeed.html')
+
+# writers block _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@app.route('/writersblock',methods=["GET", "POST"])
+def writersblock():
+    return render_template('writersblock.html')
+
+
 #--------run app------------------------
 if __name__=='__main__':
     app.run(debug=True)
