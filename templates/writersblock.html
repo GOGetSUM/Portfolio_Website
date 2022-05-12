@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NDC - Writer's Block (GUI)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Graphical User Interface:</a>
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href={{url_for('writersblock')}} class="active">Writer's Block App (GUI)</a></li>
+						<li><a href="/#gui">Back</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Writer's Block App</h1>
+							<span class="fit">
+							<video width="900" controls>
+							  <source src="static/assets/css/images/Writer's Block App.mp4" type="video/mp4">
+							  <source src="mov_bbb.ogg" type="video/ogg">
+							  Your browser does not support HTML video.
+							</video></span>
+							<p>GUI Application used for capturing a users words per minute typed in a 30 second span!</p>
+							<p>The script for this application leverages TK interface & math library. <br >
+							The GUI of this application explores the config method under TKinter where part of my GUI is responsive to the start of the counter.</p>
+							<p>Functions:<br>
+							start_timer()- Begins the timer by actuating countdown() & updates graphical user interface instructions.<br>
+							count_down(count)- script to count down from a given count entry.<br>
+							results() - calculates results, retrieves user paragraph entry at end of countdown, counts words by seperating space as character sets.<br>
+							reset_timer()-resets count down mechanism, clears user message box entry and resets results in gui.</p>
+							<p>If you would like to take a closer look please see my github repository, below.</p>
+							<ul style="list-style:none;">
+								<li><a href='https://github.com/GOGetSUM/Writer_Block_App' class="button"> GitHub - Writer's Block App</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
