@@ -110,29 +110,28 @@
 								</div>
 							</div>
 						</section>
-						<section>
-							<a href="#" class="image"><img src="static/images/pic03.jpg" alt="" data-position="center center" /></a>
+						<section id="webdev">
+							<a href="#" class="image"><img src="static/images/pic03.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Back End/Web Developement</h2>
 									<p>Projects:</p>
 									<ul style="list-style:none;">
-										<li><a href="generic.html" class="button">To Do List Webb App</a></li>
-										<li><a href="generic.html" class="button">Colour Palette Generator</a></li>
-										<li><a href="generic.html" class="button">Online Shop</a></li>
-										<li><a href="generic.html" class="button">Cafe Website</a></li>
+										<li><a href={{url_for('tasktracker')}} class="button">Task Tracker Webb App</a></li>
+										<li><a href={{url_for('colourpallette')}} class="button">Colour Palette Generator</a></li>
+										<li><a href={{url_for('onlineshop')}} class="button">Online Shop</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
-						<section>
+						<section id="https">
 							<a href="#" class="image"><img src="static/images/pic01.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>HTTP/APIs/Web Scraping</h2>
 									<p>Projects:</p>
 									<ul style="list-style:none;">
-										<li><a href="generic.html" class="button">PDF to AudioBook</a></li>
+										<li><a href={{url_for('pdftoaudio')}}  class="button">PDF to Audio (HTTPS-AWS)</a></li>
 										<li><a href="generic.html" class="button">Custom Web Scraper</a></li>
 									</ul>
 								</div>
@@ -218,7 +217,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy;What The Find. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>

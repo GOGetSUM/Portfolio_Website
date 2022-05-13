@@ -32,10 +32,29 @@ def typingspeed():
     return render_template('typingspeed.html')
 
 # writers block _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/writersblock',methods=["GET", "POST"])
+@app.route('/writersblock')
 def writersblock():
     return render_template('writersblock.html')
 
+# TodoTaskTracker_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@app.route('/tasktracker')
+def tasktracker():
+    return render_template('tasktracker.html')
+
+# colourpallette_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@app.route('/colourpallette')
+def colourpallette():
+    return render_template('colourpallette.html')
+
+# onlineshop_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@app.route('/onlineshop')
+def onlineshop():
+    return render_template('onlineshop.html')
+
+# PDF to Audio_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@app.route('/pdftoaudio')
+def pdftoaudio():
+    return render_template('pdftoaudio.html')
 
 #--------run app------------------------
 if __name__=='__main__':
