@@ -7,57 +7,57 @@ app = Flask(__name__)
 
 
 # Home _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/')
+@app.route('/',methods=["GET", "POST"])
 def home():
     return render_template('index.html')
 
 # text to morse _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/text2mrs')
+@app.route('/text2mrs',methods=["GET", "POST"])
 def text2mrse():
     return render_template('t2m.html')
 
 # tic tac toe _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/tictactoe')
+@app.route('/tictactoe',methods=["GET", "POST"])
 def tictactoe():
     return render_template('tictactoe.html')
 
 # watermark _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/watermark')
+@app.route('/watermark',methods=["GET", "POST"])
 def watermark():
     return render_template('watermark.html')
 
 # typing speed _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/typingspeed')
+@app.route('/typingspeed',methods=["GET", "POST"])
 def typingspeed():
     return render_template('typingspeed.html')
 
 # writers block _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/writersblock')
+@app.route('/writersblock',methods=["GET", "POST"])
 def writersblock():
     return render_template('writersblock.html')
 
 # TodoTaskTracker_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/tasktracker')
+@app.route('/tasktracker',methods=["GET", "POST"])
 def tasktracker():
     return render_template('tasktracker.html')
 
 # colourpallette_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/colourpallette')
+@app.route('/colourpallette',methods=["GET", "POST"])
 def colourpallette():
     return render_template('colourpallette.html')
 
 # onlineshop_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/onlineshop')
+@app.route('/onlineshop',methods=["GET", "POST"])
 def onlineshop():
     return render_template('onlineshop.html')
 
 # PDF to Audio_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/pdftoaudio')
+@app.route('/pdftoaudio',methods=["GET", "POST"])
 def pdftoaudio():
     return render_template('pdftoaudio.html')
 
 # Web Scraper_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@app.route('/wscrapper')
+@app.route('/wscrapper',methods=["GET", "POST"])
 def wscrapper():
     return render_template('webscrapper.html')
 
