@@ -3925,3 +3925,31 @@ input, select, textarea {
                 height: 200px; width:auto;
             }
 
+/*Project */
+
+	.project {
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 1680px) {
+
+        a .project {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        a .project{
+            width: 100%;
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        a .project {
+            width: 50%;
+        }
+
+    }
