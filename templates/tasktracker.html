@@ -33,19 +33,65 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Task Tracker</h1>
+							<p>This web application tracks your to-do tasks.<br> Keeps a library of the task and status of completion, allows you to search & update each task through the use of SQLalchemy (Database)
+							<br> The UI is made up of four views, To Do, On-going, Completed List, Search a Task.</p>
+							<a href="#"> <img  style="width:100%" src="static/images/tdcode (1).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								Each new task added is given a "Task ID" No. & is shown on the To Do section based on assigned priority. The priority value and ID are immutable and are carried through each view.<br>
+								The task is then carried through each view based on its completion status, 0-100%</p>
+							<a href="#"> <img  style="width:100%" src="static/images/tdcode (2).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								There are three other html pages used in this web application, Add-task, Edit-Task & Search Task.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/tdcode (3).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								The search task logic is indexing of a databased on the task ID basis being the key value.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/tdcode (4).png" alt="" data-position="center center" /></a>
+							<h4><br>Video:<br></h4>
 							<span class="fit">
 							<video width="100%" height="auto" controls>
 							  <source src="static/assets/css/images/To_Do_Task_Tracker.mp4" type="video/mp4">
 							  <source src="mov_bbb.ogg" type="video/ogg">
 							  Your browser does not support HTML video.
 							</video></span>
-							<p></p>
-							<p><br >
+							<p>
+								<br >
+								Repository is set up as usual, html code are found in template, styles/etc. are found in static & main serrver is found on the main folder.
 							</p>
-							<p>Functions:<br>
-							<br>
-							<br>
+							<a href="#"> <img  style="width:100%" src="static/images/tdcode (5).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								This script leverages the use of Flask,WTForms, SQLAlchemy & Bootstrap.<br>
+								These are used to facilitate webpage achistructural build (forms, built in html code) & used to handle database frame work structures.
 							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/tdcode (6).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								The main server code is built around building each html app route as a function:
+								<li>Index</li>
+								<li>Add</li>
+								<li>Edit</li>
+								<li>Search</li>
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/tdcode (7).png" alt="" data-position="center center" /></a>
+							<a href="#"> <img  style="width:100%" src="static/images/tdcode (8).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								This is a quick look at the database that was built in the python script.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/tdcode (9).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								Also, each HTML code had to be developed but this work was facilitated by the use of flask and bootstrap frame works.
+								<br>
+								WTForms also facilitated and simplified the coding behind the request forms needed.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/tdcode (10).png" alt="" data-position="center center" /></a>
+							<a href="#"> <img  style="width:100%" src="static/images/tdcode (11).png" alt="" data-position="center center" /></a>
 							<p>If you would like to take a closer look please see my github repository, below.</p>
 							<ul style="list-style:none;">
 								<li><a href='https://github.com/GOGetSUM/Todo' class="button"> GitHub - Task Tracker (To Do)</a></li>
@@ -59,7 +105,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy;What The Find. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy;NDC - GoGetSum All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
