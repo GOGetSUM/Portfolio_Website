@@ -33,19 +33,36 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">PDF to Audio (HTTPS-AWS)</h1>
+							<p>This application is composed of a GUI which allows the user to enter a pdf file,<br>
+								the app will then convert this pdf into a mpr and automatically play back what is found.</p>
+							<a href="#"> <img  style="width:100%" src="static/images/p2acode (1).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								This script basis works with Amazon Web Services module "Polly" throught the use of their HTTPS AWS services.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/p2acode (2).png" alt="" data-position="center center" /></a>
+							<h4><br>Video:<br></h4>
 							<span class="fit">
 							<video width="100%" height="auto" controls>
 							  <source src="static/assets/css/images/PDF to Audio.mp4" type="video/mp4">
 							  <source src="mov_bbb.ogg" type="video/ogg">
 							  Your browser does not support HTML video.
 							</video></span>
-							<p></p>
-							<p><br >
+							<p>
+								<br >
+								This script imports the following modules TKinter, Pytesseract, PDF2Image,Boto3, Pygame,Time.<br>
+								The built is simply compose of the GUI section and then a function section for the importing of the image and conversion.
 							</p>
-							<p>Functions:<br>
-							<br>
-							<br>
+							<a href="#"> <img  style="width:100%" src="static/images/p2acode (3).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								Functions:<br>
+								<li>create_text() - pulls in the pdf file, converts it into text and actuates next function create_speech() while passing through the script.</li>
+								<li>create_speech() - pulls in the script and passes it through "Polly's" synthesizor, plays audio and saves an mpr output file.</li>
+
 							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/p2acode (4).png" alt="" data-position="center center" /></a>
+
 							<p>If you would like to take a closer look please see my github repository, below.</p>
 							<ul style="list-style:none;">
 								<li><a href='https://github.com/GOGetSUM/PDFtoAudio' class="button"> GitHub - PDF to Audio (HTTPS-AWS)</a></li>
@@ -59,7 +76,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; What The Find. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy;NDC - GoGetSum All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
