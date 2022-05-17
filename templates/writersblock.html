@@ -33,20 +33,26 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Writer's Block App</h1>
+							<p>GUI Application used to help get over writer's block!<br>
+							This application will delete any work done if the writer stops typing for more than 11 seconds. The screen fades as it approaches the limit.<br>
+							Don't worry, as a last resort effort I've allowed the information to be saved to file.</p>
+							<a href="#"> <img  style="width:100%" src="static/images/wbcode (1).png" alt="" data-position="center center" /></a>
+							<a href="#"> <img  style="width:100%" src="static/images/wbcode (2).png" alt="" data-position="center center" /></a>
+							<h4><br>Video:<br></h4>
 							<span class="fit">
 							<video width="100%" height="auto" controls>
 							  <source src="static/assets/css/images/Writer's Block App.mp4" type="video/mp4">
 							  <source src="mov_bbb.ogg" type="video/ogg">
 							  Your browser does not support HTML video.
 							</video></span>
-							<p>GUI Application used for capturing a users words per minute typed in a 30 second span!</p>
-							<p>The script for this application leverages TK interface & math library. <br >
-							The GUI of this application explores the config method under TKinter where part of my GUI is responsive to the start of the counter.</p>
+							<p>Application Code is built on two sections, user interface and Functions.</p>
+							<a href="#"> <img  style="width:100%" src="static/images/wbcode (3).png" alt="" data-position="center center" /></a>
 							<p>Functions:<br>
-							start_timer()- Begins the timer by actuating countdown() & updates graphical user interface instructions.<br>
-							count_down(count)- script to count down from a given count entry.<br>
-							results() - calculates results, retrieves user paragraph entry at end of countdown, counts words by seperating space as character sets.<br>
-							reset_timer()-resets count down mechanism, clears user message box entry and resets results in gui.</p>
+							start_timer()- Begins the timer by actuating check_disappear().<br>
+							check_disappear()- Main logic function, begins count and checks for limits. Will begin to fade screen as count is greater than 6 seconds.<br>
+							results() - calculates results, retrieves user paragraph entry at every second, counts words by seperating space as character sets. Outputs live word count.<br>
+							reset_text()-resets count down mechanism, clears user message box entry and resets results in gui.</p>
+							<a href="#"> <img  style="width:100%" src="static/images/wbcode (4).png" alt="" data-position="center center" /></a>
 							<p>If you would like to take a closer look please see my github repository, below.</p>
 							<ul style="list-style:none;">
 								<li><a href='https://github.com/GOGetSUM/Writer_Block_App' class="button"> GitHub - Writer's Block App</a></li>
@@ -60,7 +66,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy;What The Find. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy;NDC - GoGetSum All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
