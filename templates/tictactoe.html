@@ -47,16 +47,28 @@
 							<a href="#"> <img  style="width:100%" src="static/images/tttcode (1).png" alt="" data-position="center center" /></a>
 							<p>
 								<br >
-							Function 1/2: Move()- Ask for user input, checks if move is valid, then replaces board space with users player character, (X or O)<br >
-							This script on basis runs through the relation of user's recorded moves (respective to each), board's current que and tic tac toe logic use for the Check() function.</p>
+							Function 1/2:<br>
+								Move()- Ask for user input, checks if move is valid, then replaces board space with users player character, (X or O)<br >
+							This script on basis runs through the relation of user's recorded moves (respective to each), board's current que and tic tac toe logic use for the Check() function.<br>
+							This script also checks for game drawn situations & each player takes a turn using a reference current board view as guidance.<br>
+							Only 2 player mode is available.</p>
 							<a href="#"> <img  style="width:100%" src="static/images/tttcode (2).png" alt="" data-position="center center" /></a>
 							<p>	<br >
 								Code repeated for second user based on if/else (odd/even turns) logic.</p>
 							<a href="#"> <img  style="width:100%" src="static/images/tttcode (3).png" alt="" data-position="center center" /></a>
-							Function 2/2: Check()- Is a nested function within Move(), it is responsible for checking current players move against a known dictionary of winning set possibilities.</p>
-							<p>This script also checks for game drawn situations & each player takes a turn using a reference current board view as guidance.<br>
-							Only 2 player mode is available.</p>
-							<p>If you would like to take a closer look please see my github repository, below.</p>
+							Function 2/2:<br>
+							Check()- Is a nested function within Move(), it is responsible for checking current players move against a known dictionary of winning set possibilities.<br>
+							I built this dictionary based on know winning sets on the tic tac toe board. Trivial.</p>
+							<a href="#"> <img  style="width:100%" src="static/images/tttcode (4).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								This logic is interesting and it took some brain juice to discover,<br>
+							first section checks the number of spots taken on the board by keeping count of each spot that is not found on the current board.<br>
+							second section check each move based on its know winning set and checks if the set number required are met in the users moves. </p>
+							<a href="#"> <img  style="width:100%" src="static/images/tttcode (5).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								If you would like to take a closer look please see my github repository, below.</p>
 							<ul style="list-style:none;">
 								<li><a href='https://github.com/GOGetSUM/Tic_Tac_Toe' class="button"> GitHub - Tic Tac Toe Script - 2 Players</a></li>
 							</ul>
