@@ -33,7 +33,9 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">BrainyQuote Scraper to CSV (WebScraper)</h1>
-							<p></p>
+							<p>This application uses Beautifulsoup to scrape a website for quotes of a specific topic and returns a saved csv of each quote found.</p>
+							<a href="#"> <img  style="width:100%" src="static/images/wscode (1).png" alt="" data-position="center center" /></a>
+							<h4><br>Video:<br></h4>
 							<span class="fit">
 							<video width="100%" height="auto" controls>
 								<source src="static/assets/css/images/BrainyQuoteScraper.mp4" type="video/mp4">
@@ -41,11 +43,22 @@
 							  Your browser does not support HTML video.
 							</video></span>
 							<p><br >
+								Noteworthy, this script is set to loop through five different topics and return five seperate csv files<br>
+								Cfscrape, IO, Random, Pandas & Beautiful Soup has been imported into our project folder.
 							</p>
-							<p>Functions:<br>
+							<a href="#"> <img  style="width:100%" src="static/images/wscode (2).png" alt="" data-position="center center" /></a>
+							<p>
 							<br>
-							<br>
+								As explain this script begins with a For loop as to capture the webscraping script hollistacillay and pass through each specific topic.<br>
+								Requests method has been superseded by CFScrapper which will allow our request to pass through, as BrainyQuote site has included Cloud Flare in their HTML Security.
+								Once the request has been succesfull, the scirpt then creates a "soup" of the site by using BeautifulSoup's html parser.<br>
+								This "soup" can then be use to extract the quote and author as text and save into a csv file.
+								To retrieve the quote the html handle selector "div a" is used to finde the required text.<br>
+								The correspondng author is found by retrieving all the elements in the "soup" which have a title of "view author"<br>
+								Both the quote list and author list are saved into a dictionary with "Quote" and "Author" as the respective key values.<br>
+								Pandas module is then used to convert the dictionary into a data frame and then into a csv file.
 							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/wscode (3).png" alt="" data-position="center center" /></a>
 							<p>If you would like to take a closer look please see my github repository, below.</p>
 							<ul style="list-style:none;">
 								<li><a href='https://github.com/GOGetSUM/cloudflare-scrape' class="button"> GitHub - Custom(BrainyQuote) Scraper </a></li>
@@ -59,7 +72,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; What The Find. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy;NDC - GoGetSum All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
