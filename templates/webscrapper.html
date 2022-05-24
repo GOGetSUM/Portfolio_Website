@@ -50,9 +50,10 @@
 							<p>
 							<br>
 								As explain this script begins with a For loop as to capture the webscraping script hollistacillay and pass through each specific topic.<br>
-								Requests method has been superseded by CFScrapper which will allow our request to pass through, as BrainyQuote site has included Cloud Flare in their HTML Security.
+								Requests method has been superseded by CFScrapper which will allow our request to pass through, as BrainyQuote site has included Cloud Flare in their HTML Security.<br>
 								Once the request has been succesfull, the scirpt then creates a "soup" of the site by using BeautifulSoup's html parser.<br>
-								This "soup" can then be use to extract the quote and author as text and save into a csv file.
+								This "soup" can then be use to extract the quote and author as text and save into a csv
+								file.
 								To retrieve the quote the html handle selector "div a" is used to finde the required text.<br>
 								The correspondng author is found by retrieving all the elements in the "soup" which have a title of "view author"<br>
 								Both the quote list and author list are saved into a dictionary with "Quote" and "Author" as the respective key values.<br>
@@ -61,7 +62,7 @@
 							<a href="#"> <img  style="width:100%" src="static/images/wscode (3).png" alt="" data-position="center center" /></a>
 							<p>If you would like to take a closer look please see my github repository, below.</p>
 							<ul style="list-style:none;">
-								<li><a href='https://github.com/GOGetSUM/cloudflare-scrape' class="button"> GitHub - Custom(BrainyQuote) Scraper </a></li>
+								<li><a href='https://github.com/GOGetSUM/QuoteCSV_WebScrapper_BrainyQuote' class="button"> GitHub - Custom(BrainyQuote) Scraper </a></li>
 							</ul>
 						</div>
 					</section>
