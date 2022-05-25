@@ -33,22 +33,134 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Online Shop</h1>
+							<p>
+								This web application is a online shop example I have built to showcase my back end user interface skills.<br>
+								This site example is based on a 1 piece inventory per item, in theory all items are unique.
+								Please note I used a starting template from HTML UP designs, this was done to help build a responvie layout and to import a CSS main styles files.<br>
+								I have customized the template by diving into the CSS styles, changing colors and tweaking the layout. I have also built complete html pages that I required to fully built this online shop example.<br>
+								<br>
+								This web application is composed of six main navigation options which are:
+								<ul class="actions">
+									<li>Home</li>
+									<li>Finds</li>
+									<li>Cart</li>
+									<li>Register</li>
+									<li>Log In</li>
+									<li>Log Out</li>
+								</ul>
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (1).png" alt="" data-position="center center" /></a>
+							<p><br>
+								The Finds section refers to the "Product List" section of the online shop example.<br>
+								Throught he use of database - SQLAlchemy (Filebased for this example), the items are listed with items which have been sold being listed at the bottom.<br>
+								The "SOLD" image is also automatically transpose onto the image once its bought. (Logic: Quantity=0).
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (2).png" alt="" data-position="center center" /></a>
+							<p><br>
+								Several modules where imported into this project, one of them being Flask_Login which was leveraged for our authorization needs.
+								As you can see below, the login page works as inteneded. An incorrect username was entered and a message was delivered to the user, in the second example below.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (3).png" alt="" data-position="center center" /></a>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (4).png" alt="" data-position="center center" /></a>
+							<p>
+								<br>
+								To access the Cart section, a valid user is required to login. If the "Cart" button is clicked prior to login in, the user will be redirected to an "Unauthorized" message.<br>
+								I built logic behind the cart to exclude duplicates and only list each item once. It also adds up the summation and displays the total cost.<br>
+								The checkout button is just a "dummy" place holder at this moment, ready to interact with "Stripe" a well known financial services and software company. "Stripe" can be leverage for all the payment transaction fees.<br>
+								As this is just an example I have not connected this web application to "Stripe".
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (5).png" alt="" data-position="center center" /></a>
+							<p><br>
+								Adding a product is only available to the Administrator of the website, updating and deleting an image to a post is also locked and accesible only to the Administrators.<br>
+								To be redirected to the add section the adminastrator must login and manuall enter "/add" to the local url.<br>
+								Once redirected the user sees a form which was built to add a new item and submit.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (6).png" alt="" data-position="center center" /></a>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (7).png" alt="" data-position="center center" /></a>
+							<p><br>
+								After the product is submitted, the user is redirected to the finds sections where the new item has been added to the item list.<br>
+								At this point the user can update the items image. The second post below shows me using the delete function to delete the "New Shirt" item.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (8).png" alt="" data-position="center center" /></a>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (9).png" alt="" data-position="center center" /></a>
+							<h4><br>Video:<br></h4>
 							<span class="fit">
 							<video width="100%" height="auto" controls>
 							  <source src="static/assets/css/images/OnlineShop.mp4" type="video/mp4">
 							  <source src="mov_bbb.ogg" type="video/ogg">
 							  Your browser does not support HTML video.
 							</video></span>
-							<p></p>
+							<p><br>
+								Repository is set up as usual, html code are found in template, styles/etc. are found in static & main serrver is found on the main folder.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (10).png" alt="" data-position="center center" /></a>
 							<p><br >
+								Flask was heavly used in the construction of this project, module variants of it as well:
+								<ul>
+									<li>Flask - is a micro framework written in python. Helps develop web applications. </li>
+									<li>Flask_sqlalchemy - is an extension of flask that adds support to SQLAlchemy </li>
+									<li>Flask_wtf - is an extension of flask that adds support to WT Forms. Provides interactive user interface for the user. </li>
+									<li>WTforms & WTforms-validators - hand in hand with the the module above we also imported the WT Forms to help build our interactive forms.</li>
+									<li>Flask_bootstrap - is an extension of flask that packages Bootstrap.</li>
+									<li>Flask_login - is an extension that provides user session management for Flask</li>
+								</ul>
+								Werkzeug.Security was imported into the project, which is a python library that is used for implementation of web application gateway interface (WSGI) applications.<br>
+								We leveraged it to handle our user registration needs.<br>
+								Also imported was Functools,Django, Collection & OS.
+								</p>
+								<p>
+									First section of the code is the main server set up, database connection & login manager setup.
+								</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (11).png" alt="" data-position="center center" /></a>
+							<p><br >
+								The Database created handles 3 tables: Inventory, User and Cart.
 							</p>
-							<p>Functions:<br>
-							<br>
-							<br>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (12).png" alt="" data-position="center center" /></a>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (13).png" alt="" data-position="center center" /></a>
+							<p><br >
+
 							</p>
-							<p>If you would like to take a closer look please see my github repository, below.</p>
-							<ul style="list-style:none;">
+							<p><br>Functions:<br>
+								admin_only(f) - wrap function which set admin only restricition.
+								home() - indexes home website, also pulls all product into a query and sorts it by quantity descending order. Passes query to Index home page.
+							<br>
+								login() - handles user login and user messages if errors are encountered.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (14).png" alt="" data-position="center center" /></a>
+							<p><br>
+								register() - registers a new user, checks for unique email and converts password to hash and saves the hash. No passwords are saved.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (15).png" alt="" data-position="center center" /></a>
+							<p><br>
+								add_product() - uses the AddProductForm created and allows user to enter a new product. Adminastrator only level.
+								delete() - deletes a specific item, item no. is carried accross to allow the indexing and deletion in the database.
+								uploader() - uploads image per specific item, item no. is carried accross to allow indexing and appending in the database.
+								logout()- simply logs out the user.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (16).png" alt="" data-position="center center" /></a>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (17).png" alt="" data-position="center center" /></a>
+							<p><br>
+								cart() - builds cart for view per user login, also sorts out all duplicates.<br>
+								additems() - allows user to add selected item into their cart.<br>
+								removeitems() - allows user to remove selected item from their cart.<br>
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (18).png" alt="" data-position="center center" /></a>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (19).png" alt="" data-position="center center" /></a>
+							<p><br>
+								Although, I did not set up Strip I have allocated a section where it would be access through their specific API and request rules.<br>
+								In theory quantity of an item would drop to zero once sold.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (20).png" alt="" data-position="center center" /></a>
+							<p><br>
+								Plenty of HTML code was built aswell to create the necessary pages.<br>
+								The examples below show sections of these html codes where you can view the use of blocks to import query information and other data from the main server.
+							</p>
+							<a href="#"> <img  style="width:100%" src="static/images/oscode (21).png" alt="" data-position="center center" /></a>
+							<p><br>If you would like to take a closer look please see my github repository, below.<br>
+							I've also deployed an example of the online shop, see below. Please note you must create an account to view the cart page index.</p>
+							<ul class ='actions' style="list-style:none;">
 								<li><a href='https://github.com/GOGetSUM/Online_Shop' class="button"> GitHub - Online Shop Template</a></li>
+								<li><a href='https://ndc-portfolio-onlineshop.herokuapp.com/' class="button"> Heroku - OnlineShop Example</a></li>
 							</ul>
 						</div>
 					</section>
@@ -59,7 +171,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; What The Find. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy;NDC - GoGetSum All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
