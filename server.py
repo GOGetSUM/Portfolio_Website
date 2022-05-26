@@ -60,6 +60,10 @@ def pdftoaudio():
 @app.route('/wscrapper',methods=["GET", "POST"])
 def wscrapper():
     return render_template('webscrapper.html')
+# Certs_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@app.route('/certs',methods=["GET", "POST"])
+def certs():
+    return render_template('certs.html')
 
 
 #--------run app------------------------
