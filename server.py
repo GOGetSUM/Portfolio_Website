@@ -51,6 +51,11 @@ def colourpallette():
 def onlineshop():
     return render_template('onlineshop.html')
 
+# onlineshopv2_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@app.route('/onlineshopv2',methods=["GET", "POST"])
+def onlineshopv2():
+    return render_template('onlineshopv2.html')
+
 # PDF to Audio_ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @app.route('/pdftoaudio',methods=["GET", "POST"])
 def pdftoaudio():
