@@ -6,7 +6,7 @@ from flask import Flask, render_template, redirect, url_for, request
 app = Flask(__name__)
 
 
-# Home _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Home _ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~A
 @app.route('/',methods=["GET", "POST"])
 def home():
     return render_template('index.html')
