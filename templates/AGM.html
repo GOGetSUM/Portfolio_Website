@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<link rel="icon" type="image/x-icon" href="static/images/faviconNCD.ico" />
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NDC - Automated Garden Mister (HTTPS/APIs)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">HTTPS/APIs:</a>
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href={{url_for('AGM')}} class="active">Automated Garden Mister (HTTPS/APIs)</a></li>
+						<li><a href="/#https">Back</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Automated Garden Mister</h1>
+							<p>
+								It's about to be a HOT summer and to keep things cool, I have created an automated garden mister. Acquiring a garden mister from Amazon was fairly easy and low cost.
+								To save money, this garden mister has been paired with a Kasa smart plug and through the use of API requests and Python Anywhere's scheduling capabilities I have created
+								coded a simple program to run this mister at low maintaince automated status.
+								<br>
+								In this project the use of Python clients have been used to help build the required code.
+								<br>
+								<ul>
+									<li>GeoPy - Used to acquire the required geographical location. (Lat, Lon)</li>
+									<li>Open Weather Map - Used to acquire current weather forecast.</li>
+									<li>Twilio - Used to send SMS notifications</li>
+									<li>Kasa Smart / TP -Link - Kasa Smart Plug hardware was use to control "on/off" modes & status checking of pump.</li>
+								</ul>
+								<a href="#"> <img  style="width:100%" src="static/images/AGM.jpg" alt="" data-position="center center" /></a>
+								<a href="#"> <img  style="width:100%" src="static/images/AGM(1).jpg" alt="" data-position="center center" /></a>
+								<br>
+
+								This project documentation is composed of 2 - documented videos, narrated by myself.
+								<ul class="actions">
+									<li>Part 1- Code Setup</li>
+									<li>Part 2 - Mister Setup and Actuation</li>
+								</ul>
+							</p>
+							<h4><br>Video: Part 1 - Code Setup<br></h4>
+							<span class="fit">
+							<video width="100%" height="auto" controls>
+							  <source src="static/assets/css/images/AGMp1.mp4" type="video/mp4">
+							  <source src="mov_bbb.ogg" type="video/ogg">
+							  Your browser does not support HTML video.
+							</video></span>
+
+							<h4><br>Video: Part 2 - Mister Setup and Actuation<br></h4>
+							<span class="fit">
+							<video width="100%" height="auto" controls>
+							  <source src="static/assets/css/images/OSv2p2.mp4" type="video/mp4">
+							  <source src="mov_bbb.ogg" type="video/ogg">
+							  Your browser does not support HTML video.
+							</video></span>
+
+							<p><br>If you would like to take a closer look please see my github repository, below.<br>
+							I've also deployed an example of the online shop, see below. Please note you must create an account to view the cart page index.</p>
+							<ul class ='actions' style="list-style:none;">
+								<li><a href='https://github.com/GOGetSUM/O' class="button"> GitHub - AGM</a></li>
+
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy;NDC - GoGetSum All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
